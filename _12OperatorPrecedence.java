@@ -1,0 +1,19 @@
+
+public class _12OperatorPrecedence {
+	public static void main(String [] args) {
+		System.out.println(10 - 5 - 5);
+		
+		int a = 100;
+		a = --a + a++ + a-- + a++;
+		System.out.println("a = "+ a);
+		
+		a = 1;
+		a = -a-- + a++ / -a-- * --a;
+		System.out.println("a = "+ a);
+		
+		a = 2;
+		boolean res = a++ == 2 || --a == 2 && --a == 2;
+		System.out.println("res = " + res);
+		System.out.println(a);
+	}
+}
